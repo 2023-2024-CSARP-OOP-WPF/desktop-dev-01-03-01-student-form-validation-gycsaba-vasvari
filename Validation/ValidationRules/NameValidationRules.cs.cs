@@ -7,5 +7,16 @@
         {
             _nameToValidate = name;
         }
+
+        public bool IsNameShort
+        {
+            get
+            {
+                if (_nameToValidate.Length <= 3)
+                    return true;
+                else
+                    return false;
+            }
+        }
     }
 }
