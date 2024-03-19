@@ -7,7 +7,8 @@ namespace Kreta.Desktop.Validation
     {
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
-            throw new System.NotImplementedException();
+
+            return new ValidationResult(true, "");
         }
     }
 }
