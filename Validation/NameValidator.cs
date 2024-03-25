@@ -12,6 +12,8 @@ namespace Kreta.Desktop.Validation
             {
                 string nameToValidate = (string)value;
                 NameValidationRules nvr = new NameValidationRules(nameToValidate);
+                if (nvr.IsNameShort)
+                    return new ValidationResult(false, "A név túl rövid!");
             }
             return new ValidationResult(true, "");
         }
