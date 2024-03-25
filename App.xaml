@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:MenuProject"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="/Styles/ValidationStyle.xaml"/>
     </Application.Resources>
 </Application>

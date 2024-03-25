@@ -64,7 +64,8 @@
                      CommandParameter="{Binding SelectedStudent}"
                      />
         </StackPanel>
-        <TextBox Grid.Row="2" Grid.Column="1" Margin="2 2 2 2" Padding="0 2">
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="2 2 2 2" Padding="0 2"
+                  Validation.ErrorTemplate="{StaticResource ValidationTemplate}">
             <TextBox.Text>
                 <Binding Path="SelectedStudent.LastName" Mode="TwoWay" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
