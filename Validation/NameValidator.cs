@@ -1,4 +1,4 @@
-﻿using Kreta.Desktop.Validation.ValidationRules;
+﻿using MenuProject.Validation.ValidationRules;
 using System.Globalization;
 using System.Windows.Controls;
 

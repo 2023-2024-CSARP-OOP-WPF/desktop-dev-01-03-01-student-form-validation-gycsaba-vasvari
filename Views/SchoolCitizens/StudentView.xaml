@@ -64,8 +64,15 @@
                      CommandParameter="{Binding SelectedStudent}"
                      />
         </StackPanel>
-
-        <TextBox Grid.Row="2" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding SelectedStudent.LastName}"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="2 2 2 2" Padding="0 2">
+            <TextBox.Text>
+                <Binding Path="SelectedStudent.LastName" Mode="TwoWay" ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged">
+                    <Binding.ValidationRules>
+                        <validation:NameValidator/>
+                    </Binding.ValidationRules>
+                </Binding>
+            </TextBox.Text>
+        </TextBox>
         <TextBox Grid.Row="3" Grid.Column="1" Margin="2 2 2 2" Padding="0 2" Text="{Binding SelectedStudent.FirstName}"></TextBox>
         <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1">
             <RadioButton GroupName="Gender" Margin="2 6 2 2" IsChecked="{Binding SelectedStudent.IsWoman}">nő</RadioButton>
