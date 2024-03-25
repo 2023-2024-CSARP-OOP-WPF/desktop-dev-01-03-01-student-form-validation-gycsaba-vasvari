@@ -1,4 +1,4 @@
-﻿namespace Kreta.Desktop.Validation.ValidationRules
+﻿namespace MenuProject.Validation.ValidationRules
 {
     public class NameValidationRules
     {

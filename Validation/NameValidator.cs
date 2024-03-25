@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Controls;
 
-namespace Kreta.Desktop.Validation
+namespace MenuProject.Validation
 {
     public class NameValidator : ValidationRule
     {
